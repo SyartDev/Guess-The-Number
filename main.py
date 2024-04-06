@@ -2,14 +2,15 @@ import random
 
 gameover = False
 tries = 10 
-
+print("Welcome to the Number Guessing Game!")
+print("I'm thinking of a number between 1 and 100.")
 mode = input("Do you want to play easy 'e' or hard 'h' mode?: ")
 if mode == "h":
     tries = 5 
 
 while not gameover and tries > 0:
     try:
-        num = int(input("Guess a number from 1 to 100: "))
+        num = int(input("Guess a number: "))
     except ValueError:
         print("Invalid input. Please enter a valid number.")
         continue
