@@ -9,7 +9,7 @@ if mode == "h":
 
 while not gameover and tries > 0:
     try:
-        num = int(input("Guess a number: "))
+        num = int(input("Guess a number from 1 to 100: "))
     except ValueError:
         print("Invalid input. Please enter a valid number.")
         continue
