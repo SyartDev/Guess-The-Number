@@ -1,11 +1,11 @@
 import random
 
 gameover = False
-tries = 10  # Standard-Anzahl der Versuche für den einfachen Modus
+tries = 10 
 
 mode = input("Do you want to play easy 'e' or hard 'h' mode?: ")
 if mode == "h":
-    tries = 5  # Anzahl der Versuche für den schweren Modus
+    tries = 5 
 
 while not gameover and tries > 0:
     try:
